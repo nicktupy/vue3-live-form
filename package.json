@@ -16,7 +16,14 @@
     "model",
     "live"
   ],
-  "author": "Nicholas Tupy",
+  "author": {
+    "name": "Nicholas Tupy",
+    "email": "nicktupy@vyx.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicktupy/vue3-live-form"
+  },
   "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.18.0",
