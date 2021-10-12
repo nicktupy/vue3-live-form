@@ -122,6 +122,15 @@ label {
 
 		.sf-nested-column {
 			margin: 0 6px;
+			position: relative;
+			input[type='text'],
+			input[type='password'],
+			input[type='date'],
+			input[type='number'],
+			textarea,
+			select {
+				width: 90%;
+			}
 		}
 
 		.sf-nested-column:last-of-type {

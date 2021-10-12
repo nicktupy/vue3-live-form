@@ -3,7 +3,7 @@
 This component, written using TypeScript and the Vue 3 composition API, creates a schema-driven form that allows you to modify the state of an object. This component is currently a work in progress and is an early step in creating more flexible, open source versions of components I have developed in the past.
 
 
-## Features/Notes
+## Features / Notes
 
 -   Each key on the object/model being modified can be targeted with a number of different input types.
 -   Input types that accept multiple options or values can be configured to use an array existing on the original object, or a custom array provided in the schema.
@@ -11,7 +11,7 @@ This component, written using TypeScript and the Vue 3 composition API, creates 
 -   A row type of "nested" allows you to selectively modify a nested array of objects, and selected keys within them. All of the form's input types are compatible with this. Nesting multiple "nested" input types is possible allowing you to deeply modify a data structure, although the UI is not currently optimized for this. An example of a nested input within a nested input can bee seen below.
 -   The visibility of rows can be determined conditionally
 
-## Future features/To-Do list:
+## Future features / To-Do list:
 
 -   Schema driven form validation
 -   Improved styling
@@ -57,3 +57,4 @@ optionLabel|`String`|*optional* Allows you to specify which key will act as the 
 optionValue|`String`|*optional* Allows you to specify which key will act as the value for the **options** property when objects are being used. If this value is not provided, the entire object will be used in the source data object/model.
 label|`String`|*optional* Label for the input row. If no label is provided, the **field** name will be used.
 columns|`Array<RowSchema>`|*optional* Only used when the input type is 'nested'. Allows you to define a schema for columns of the nested editor. The same schema used for rows can be applied to nested columns.
+criteria|`Array['field','operator','value']`|*optional* Sets a condition for the row to be rendered. `field` represents the property/key of the model that will be compared against the `value` parameter of the array. Current valid operators are `==` and `!=`.
