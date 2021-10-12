@@ -20,6 +20,25 @@ This component, written using TypeScript and the Vue 3 composition API, creates 
 -   Ability to re-order in the 'nested' input type
 -   Ability to target a deeply nested field/key using dot notation.
 
+## Installation
+    npm install vue3-live-form
+
+## Usage
+Import the component:
+
+    import { Vue3LiveForm } from  'vue3-live-form';
+
+Register the component if using the Vue options API (Not required if using the Vue 3 composition API with the `setup` tag):
+
+    export  default {
+		name:  'MyComponent',
+		components: { Vue3LiveForm},
+	}
+
+Pass a `schema` parameter into the component and attach an object/model to it using `v-model`:
+
+    <Vue3LiveForm :schema="schema" v-model="data" />
+
 ## Schema Guide
 |Property|Type|Description
 |-|-|-|
