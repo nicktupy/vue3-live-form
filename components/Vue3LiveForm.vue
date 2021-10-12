@@ -58,7 +58,7 @@ onMounted(() => {
 	flex-direction: column;
 	overflow: hidden;
 	padding: 10px;
-	color: rgb(16, 29, 41);
+	color: inherit;
 
 	.sf-row {
 		display: flex;
