@@ -58,7 +58,7 @@ onMounted(() => {
 	flex-direction: column;
 	overflow: hidden;
 	padding: 10px;
-	color: rgb(16, 29, 41);
+	color: inherit;
 
 	.sf-row {
 		display: flex;
@@ -78,6 +78,10 @@ onMounted(() => {
 			border-radius: 8px;
 			font-family: inherit;
 			font-size: 0.9em;
+		}
+
+		textarea {
+			resize: vertical;
 		}
 
 		.sf-row-label {

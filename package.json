@@ -1,6 +1,6 @@
 {
   "name": "vue3-live-form",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A flexible, schema driven form component for Vue 3.",
   "main": "index.ts",
   "scripts": {
