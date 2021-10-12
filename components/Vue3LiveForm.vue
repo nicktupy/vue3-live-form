@@ -80,6 +80,10 @@ onMounted(() => {
 			font-size: 0.9em;
 		}
 
+		textarea {
+			resize: vertical;
+		}
+
 		.sf-row-label {
 			width: v-bind('props?.schema?.labelWidth ?? "150px"');
 			overflow: hidden;
