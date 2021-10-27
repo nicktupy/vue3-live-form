@@ -30,7 +30,7 @@ Import the component:
 
 Register the component if using the Vue options API (Not required if using the Vue 3 composition API with the `setup` tag):
 
-    export  default {
+    export default {
 		name:  'MyComponent',
 		components: { Vue3LiveForm},
 	}
@@ -50,8 +50,8 @@ Pass a `schema` parameter into the component and attach an object/model to it us
 Property|Type|Description
 -|-|-|
 type|`String`| The type of input to be rendered. Accepted values: `text` `password` `date` `number` `checkbox` `boolean` `textarea` `textbox` `select` `radio` `nested`. The 'select' and radio input types require the **options** property to be configured. The 'nested' input type requires **field** be configured to reference an array of objects on the data source object/model.
+field|`String`| The key of the data source object/model you wish to modify.
 readonly|`Boolean`|*optional* Applies the "readonly" attribute to an input field.
-field|`String`|*optional* The key of the data source object/model you wish to modify.
 options|`String` or `Array`|Applies to `select` & `radio` input types. Enter an array of options for input types with multiple options. A `string` can also be entered representing an existing key with an array on the master object. The array values can be strings, numbers or objects with multiple keys.
 optionLabel|`String`|*optional* Allows you to specify which key will act as the label for the **options** property when objects are being used. If this value is not provided, the entire object structure will be rendered in the select or radio options.
 optionValue|`String`|*optional* Allows you to specify which key will act as the value for the **options** property when objects are being used. If this value is not provided, the entire object will be used in the source data object/model.
