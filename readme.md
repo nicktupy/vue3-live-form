@@ -2,6 +2,7 @@
 
 This component, written using TypeScript and the Vue 3 composition API, creates a schema-driven form that allows you to modify the state of an object. This component is currently a work in progress and is an early step in creating more flexible, open source versions of components I have developed in the past.
 
+[**Demo**](https://www.nicholastupy.com/liveform)
 
 ## Features / Notes
 
